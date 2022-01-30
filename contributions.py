@@ -9,7 +9,7 @@ EmplContributions = namedtuple('EmplContributions', ['username', 'count', 'date'
 _BASE_URL = f'https://github.com/users/'
 
 
-def get_user_contributions(user: string, start_date: string, end_date: string):
+def get_user_contributions(username: string, start_date: string, end_date: string):
     url = f'{_BASE_URL}{username}/contributions?from={start_date}&to={end_date}'
 
     page = requests.get(url)
