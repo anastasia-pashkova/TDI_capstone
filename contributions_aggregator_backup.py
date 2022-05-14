@@ -21,6 +21,7 @@ def contributions_aggregator(org='github', filename='contributions.csv'):
     # usernames2 = usernames[:1]
 
     # TODO extend with other users here
+    usernames.extend(['domofactor', 'donal', 'dctucker', 'bwestover', 'ashishkeshan', 'oakeyc'])
 
     with open(filename, 'w') as f:
         w = csv.writer(f)
